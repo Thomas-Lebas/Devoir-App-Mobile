@@ -1,3 +1,10 @@
 <resources>
+    <string name="btn_text_students">Students</string>
+    <string name="btn_text_students_ws">Students Online</string>
+
+
     <string name="app_name">Devoir Mobile</string>
+    <string name="main_title">EPSI</string>
+    <string name="title_students">Students</string>
+    <string name="title_students_ws">Students Online</string>
 </resources>
