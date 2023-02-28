@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/imageViewEtudiant"
+        android:layout_width="match_parent"
+        android:layout_height="297dp"
+        android:layout_weight="1"
+        android:src="@drawable/epsi_logo"
+        android:contentDescription="@string/image_etudiant"/>
+
+    <TextView
+        android:id="@+id/InfoEtudiant"
+        style="@style/TextEtudiant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Info Etudiant" />
+
+    <TextView
+        android:id="@+id/Nom"
+        style="@style/TextEtudiant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Nom et prénom" />
+
+    <TextView
+        android:id="@+id/Email"
+        style="@style/TextEtudiant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/Groupe"
+        style="@style/TextEtudiant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Groupe" />
+
+    <TextView
+        android:id="@+id/Lien"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="lien" />
+
+</LinearLayout>

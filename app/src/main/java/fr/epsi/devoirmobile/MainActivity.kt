@@ -15,10 +15,11 @@ class MainActivity : BaseActivity() {
 
         setHeaderTitle(getString(R.string.main_title))
 
-        val buttonStudents=findViewById<Button>(R.id.buttonStudents)
-        buttonStudents.setOnClickListener(View.OnClickListener {
-            val newIntent = Intent(application, StudentsActivity::class.java)
+        val buttonInfo=findViewById<Button>(R.id.buttonInfo)
+        buttonInfo.setOnClickListener(View.OnClickListener {
+            val newIntent = Intent(application, InfoActivity::class.java)
             startActivity(newIntent)
         })
+
     }
 }

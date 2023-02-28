@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".InfoActivity">
     <include
         layout="@layout/layout_header"
         android:layout_width="match_parent"
@@ -18,17 +17,15 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
+            android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-
             <Button
-                android:id="@+id/buttonInfo"
                 style="@style/EpsiButton"
-                android:text="@string/btn_text_info" />
-
+                android:id="@+id/buttonStudents"
+                android:text="@string/btn_text_student" />
         </LinearLayout>
     </ScrollView>
+
 
 </LinearLayout>
