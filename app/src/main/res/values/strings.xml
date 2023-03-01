@@ -1,12 +1,13 @@
 <resources>
-    <string name="btn_text_info">Info</string>
-    <string name="btn_text_student">Etudiant</string>
+    <string name="btn_text_info">Informations</string>
+    <string name="btn_text_product">Produits</string>
+    <string name="btn_text_student">Etudiant 1</string>
 
 
     <string name="app_name">Devoir Mobile</string>
     <string name="main_title">EPSI</string>
-    <string name="title_info">Info</string>
-    <string name="title_student">Etudiant</string>
+    <string name="title_info">Informations</string>
+    <string name="title_product">Rayons</string>
+    <string name="title_student">Thomas LEBAS</string>
 
-    <string name="image_etudiant">Etudiant</string>
 </resources>

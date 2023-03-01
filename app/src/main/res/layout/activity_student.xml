@@ -12,56 +12,71 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <ImageView
-        android:id="@+id/imageViewEtudiant"
+    <!--<ImageView
+        android:id="@+id/imageViewStudent"
         android:layout_width="match_parent"
-        android:layout_height="297dp"
-        android:layout_weight="1"
-        android:src="@drawable/epsi_logo"
-        android:contentDescription="@string/image_etudiant"/>
+        android:layout_height="343dp"
+        android:layout_marginBottom="30dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/ProfilEtudiant"
+        android:background="@drawable/img"/>-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="343dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/profil"
+        app:civ_border_width="3dp"
+        app:civ_border_color="#C2ADF5"/>
 
     <TextView
-        android:id="@+id/InfoEtudiant"
-        style="@style/TextEtudiant"
+        android:id="@+id/InfoStudent"
+        style="@style/TextStudent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="Info Etudiant" />
+        android:textColor="#C2ADF5"
+        android:text="Informations de l'étudiant" />
 
     <TextView
-        android:id="@+id/Nom"
-        style="@style/TextEtudiant"
+        android:id="@+id/Name"
+        style="@style/TextStudent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="Nom et prénom" />
+        android:text="LEBAS Thomas" />
 
     <TextView
         android:id="@+id/Email"
-        style="@style/TextEtudiant"
+        style="@style/TextStudent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="Email" />
+        android:text="thomas.lebas@epsi.fr" />
 
     <TextView
-        android:id="@+id/Groupe"
-        style="@style/TextEtudiant"
+        android:id="@+id/Group"
+        style="@style/TextStudent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="Groupe" />
+        android:text="Groupe 2 Spé Dev FullStack" />
 
     <TextView
-        android:id="@+id/Lien"
+        android:id="@+id/UrlEpsi"
+        style="@style/UrlStudent"
         android:layout_width="match_parent"
-        android:layout_height="59dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
         android:layout_weight="1"
+        android:autoLink="web"
         android:gravity="center"
-        android:text="lien" />
+        android:text="https://epsi.fr/" />
 
 </LinearLayout>

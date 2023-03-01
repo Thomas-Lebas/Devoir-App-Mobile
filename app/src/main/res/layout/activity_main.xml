@@ -23,10 +23,29 @@
             android:orientation="vertical" >
 
 
-            <Button
+            <!--<Button
+               android:id="@+id/buttonInfo"
+               style="@style/EpsiButton"
+               android:text="@string/btn_text_info" />
+
+           <Button
+               android:id="@+id/buttonProduct"
+               style="@style/EpsiButton"
+               android:text="@string/btn_text_product" />-->
+
+            <android.widget.Button
                 android:id="@+id/buttonInfo"
-                style="@style/EpsiButton"
-                android:text="@string/btn_text_info" />
+                style="@style/EpsiCustomButton"
+                android:background="@drawable/bg_button"
+                android:text="@string/btn_text_info"
+                />
+
+            <android.widget.Button
+                android:id="@+id/buttonProduct"
+                style="@style/EpsiCustomButton"
+                android:background="@drawable/bg_button"
+                android:text="@string/btn_text_product"
+                />
 
         </LinearLayout>
     </ScrollView>

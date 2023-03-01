@@ -2,12 +2,12 @@
     <!-- Base application theme. -->
     <style name="Theme.DevoirMobile" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">#a18cd1</item>
+        <item name="colorPrimaryVariant">#a18cd1</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorSecondary">#C2ADF5</item>
+        <item name="colorSecondaryVariant">#C2ADF5</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
@@ -22,9 +22,24 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
-    <style name="TextEtudiant" parent="Widget.AppCompat.TextView">
+    <style name="EpsiCustomButton" parent="TextAppearance.AppCompat.Widget.Button">
+        <item name="android:layout_marginTop">35dp</item>
+        <item name="android:layout_marginBottom">35dp</item>
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="TextStudent" parent="Widget.AppCompat.TextView">
         <item name="android:textSize">30dp</item>
         <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="UrlStudent" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">35dp</item>
     </style>
 
 

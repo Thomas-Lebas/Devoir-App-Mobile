@@ -20,10 +20,18 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <Button
+            <!--<Button
                 style="@style/EpsiButton"
                 android:id="@+id/buttonStudents"
-                android:text="@string/btn_text_student" />
+                android:text="@string/btn_text_student" />-->
+
+            <android.widget.Button
+                android:id="@+id/buttonStudents"
+                style="@style/EpsiCustomButton"
+                android:background="@drawable/bg_button"
+                android:text="@string/btn_text_student"
+                />
+
         </LinearLayout>
     </ScrollView>
 

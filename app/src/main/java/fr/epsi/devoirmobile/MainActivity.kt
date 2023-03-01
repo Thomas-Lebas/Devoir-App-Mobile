@@ -1,12 +1,9 @@
 package fr.epsi.devoirmobile
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Button
-import android.widget.TextView
 
 class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,6 +15,12 @@ class MainActivity : BaseActivity() {
         val buttonInfo=findViewById<Button>(R.id.buttonInfo)
         buttonInfo.setOnClickListener(View.OnClickListener {
             val newIntent = Intent(application, InfoActivity::class.java)
+            startActivity(newIntent)
+        })
+
+        val buttonProduct=findViewById<Button>(R.id.buttonProduct)
+        buttonProduct.setOnClickListener(View.OnClickListener {
+            val newIntent = Intent(application, CategoryActivity::class.java)
             startActivity(newIntent)
         })
 

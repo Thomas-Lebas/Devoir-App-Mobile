@@ -3,6 +3,7 @@ package fr.epsi.devoirmobile
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 
@@ -19,5 +20,7 @@ class InfoActivity : BaseActivity() {
             startActivity(newIntent)
         })
 
+
     }
+
 }
