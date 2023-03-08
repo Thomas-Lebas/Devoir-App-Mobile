@@ -12,6 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <!--<ImageView
         android:id="@+id/imageViewStudent"
         android:layout_width="match_parent"
@@ -21,62 +25,71 @@
         app:srcCompat="@drawable/ProfilEtudiant"
         android:background="@drawable/img"/>-->
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="343dp"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/profil"
-        app:civ_border_width="3dp"
-        app:civ_border_color="#C2ADF5"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/InfoStudent"
-        style="@style/TextStudent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:textColor="#C2ADF5"
-        android:text="Informations de l'étudiant" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="343dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/profil"
+                app:civ_border_width="3dp"
+                app:civ_border_color="#C2ADF5"/>
 
-    <TextView
-        android:id="@+id/Name"
-        style="@style/TextStudent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:text="LEBAS Thomas" />
+            <TextView
+                android:id="@+id/InfoStudent"
+                style="@style/TextStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#C2ADF5"
+                android:text="Informations de l'étudiant" />
 
-    <TextView
-        android:id="@+id/Email"
-        style="@style/TextStudent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:text="thomas.lebas@epsi.fr" />
+            <TextView
+                android:id="@+id/Name"
+                style="@style/TextStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="LEBAS Thomas" />
 
-    <TextView
-        android:id="@+id/Group"
-        style="@style/TextStudent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:text="Groupe 2 Spé Dev FullStack" />
+            <TextView
+                android:id="@+id/Email"
+                style="@style/TextStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="thomas.lebas@epsi.fr" />
 
-    <TextView
-        android:id="@+id/UrlEpsi"
-        style="@style/UrlStudent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:layout_weight="1"
-        android:autoLink="web"
-        android:gravity="center"
-        android:text="https://epsi.fr/" />
+            <TextView
+                android:id="@+id/Group"
+                style="@style/TextStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Groupe 2 Spé Dev FullStack" />
+
+            <TextView
+                android:id="@+id/UrlEpsi"
+                style="@style/UrlStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_weight="1"
+                android:autoLink="web"
+                android:gravity="center"
+                android:text="https://epsi.fr/" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

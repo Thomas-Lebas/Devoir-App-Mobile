@@ -10,10 +10,7 @@
         android:id="@+id/category_name"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:gravity="center"
-        android:hint="@string/category_name"
-        android:textSize="16sp"
-        android:layout_marginBottom="1sp"
-        android:background="@drawable/border_category"/>
+        style="@style/category_name"
+        android:background="@drawable/border_item"/>
 
 </LinearLayout>

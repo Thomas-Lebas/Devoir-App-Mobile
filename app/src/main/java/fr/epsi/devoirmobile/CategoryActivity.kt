@@ -38,8 +38,7 @@ class CategoryActivity : BaseActivity() {
             override fun onResponse(call: Call, response: Response) {
                 if (!response.isSuccessful) {
                     Log.e("HTTP Error", "Something didn't load, or wasn't successful")
-                } else
-                {
+                } else {
                     val categoryResponse = CategoryList(response.body!!.string())
                     categories.addAll(categoryResponse)
                     runOnUiThread { categoryAdapter.notifyDataSetChanged() }
