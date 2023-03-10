@@ -9,7 +9,8 @@ class DetailActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
-        setHeaderTitle(getString(R.string.title_detail))
+        val title: String? = intent.extras!!.getString("title")
+        setHeaderTitle(title.toString())
         showBack()
 
         val imageView = findViewById<ImageView>(R.id.product_details_ImageView)
