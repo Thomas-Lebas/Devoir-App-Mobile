@@ -10,13 +10,13 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
-class ProductAdapter (val products: ArrayList<Product>): RecyclerView.Adapter<ProductAdapter.ViewHolder>(){
+class ProductAdapter (private val products: ArrayList<Product>): RecyclerView.Adapter<ProductAdapter.ViewHolder>(){
 
     class ViewHolder(view: View): RecyclerView.ViewHolder(view){
-        val imageView = view.findViewById<ImageView>(R.id.layout_product_ImageView)
-        val productNameTextView = view.findViewById<TextView>(R.id.layout_product_name)
-        val productDescriptionTextView = view.findViewById<TextView>(R.id.layout_product_description)
-        val container = view.findViewById<LinearLayout>(R.id.layout_product_linearLayout)
+        val imageView: ImageView = view.findViewById(R.id.cell_product_ImageView)
+        val productNameTextView: TextView = view.findViewById(R.id.cell_product_name)
+        val productDescriptionTextView: TextView = view.findViewById(R.id.cell_product_description)
+        val container: LinearLayout = view.findViewById(R.id.layout_product_linearLayout)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -26,7 +26,7 @@ class ProductAdapter (val products: ArrayList<Product>): RecyclerView.Adapter<Pr
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val product = products.get(position)
+        val product = products[position]
 
         holder.productNameTextView.text = product.name
         holder.productDescriptionTextView.text = product.description

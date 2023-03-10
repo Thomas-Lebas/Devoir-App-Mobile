@@ -48,7 +48,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textColor="#C2ADF5"
-                android:text="Informations de l'étudiant" />
+                android:text="@string/student_description_title" />
 
             <TextView
                 android:id="@+id/Name"
@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="LEBAS Thomas" />
+                android:text="@string/student_name" />
 
             <TextView
                 android:id="@+id/Email"
@@ -66,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="thomas.lebas@epsi.fr" />
+                android:text="@string/student_email" />
 
             <TextView
                 android:id="@+id/Group"
@@ -75,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Groupe 2 Spé Dev FullStack" />
+                android:text="@string/student_group" />
 
             <TextView
                 android:id="@+id/UrlEpsi"
@@ -86,7 +86,7 @@
                 android:layout_weight="1"
                 android:autoLink="web"
                 android:gravity="center"
-                android:text="https://epsi.fr/" />
+                android:text="@string/url_epsi" />
 
         </LinearLayout>
 

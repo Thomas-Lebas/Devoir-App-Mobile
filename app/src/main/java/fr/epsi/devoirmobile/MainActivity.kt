@@ -2,7 +2,6 @@ package fr.epsi.devoirmobile
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 
 class MainActivity : BaseActivity() {
@@ -13,16 +12,16 @@ class MainActivity : BaseActivity() {
         setHeaderTitle(getString(R.string.main_title))
 
         val buttonInfo=findViewById<Button>(R.id.buttonInfo)
-        buttonInfo.setOnClickListener(View.OnClickListener {
+        buttonInfo.setOnClickListener {
             val newIntent = Intent(application, InfoActivity::class.java)
             startActivity(newIntent)
-        })
+        }
 
         val buttonProduct=findViewById<Button>(R.id.buttonProduct)
-        buttonProduct.setOnClickListener(View.OnClickListener {
+        buttonProduct.setOnClickListener {
             val newIntent = Intent(application, CategoryActivity::class.java)
             startActivity(newIntent)
-        })
+        }
 
     }
 }

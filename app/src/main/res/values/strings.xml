@@ -3,6 +3,13 @@
     <string name="btn_text_product">Produits</string>
     <string name="btn_text_student">Etudiant 1</string>
 
+    <string name="student_description_title">Informations de l\'étudiant</string>
+    <string name="student_name">LEBAS THOMAS</string>
+    <string name="student_email">thomas.lebas@epsi.fr</string>
+    <string name="student_group">Groupe 2 Spé Dev FullStack</string>
+    <string name="url_epsi">http://www.epsi.fr/</string>
+
+    <string name="product_description">Description :</string>
 
     <string name="app_name">Devoir Mobile</string>
     <string name="main_title">EPSI</string>

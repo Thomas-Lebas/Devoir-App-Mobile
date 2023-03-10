@@ -45,7 +45,7 @@
     <style name="category_name">
         <item name="android:gravity">center</item>
         <item name="android:textSize">16sp</item>
-        <item name="android:layout_marginBottom">10sp</item>
+        <item name="android:layout_marginBottom">60dp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
@@ -64,8 +64,24 @@
     <style name="product_description">
         <item name="android:textSize">14sp</item>
         <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">5dp</item>
         <item name="android:layout_marginLeft">20dp</item>
         <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="product_description_title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="product_description_detail">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
     </style>
 
 </resources>

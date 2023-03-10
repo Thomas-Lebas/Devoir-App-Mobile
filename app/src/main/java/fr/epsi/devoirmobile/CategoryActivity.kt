@@ -1,11 +1,10 @@
 package fr.epsi.devoirmobile
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import fr.epsi.devoirmobile.CategoryAdapter
-import fr.epsi.devoirmobile.Category
 import okhttp3.*
 import org.json.JSONObject
 import java.io.IOException
@@ -32,14 +31,15 @@ class CategoryActivity : BaseActivity() {
 
         httpClient.newCall(request).enqueue(object: Callback {
             override fun onFailure(call: Call, e: IOException) {
-                e.printStackTrace();
+                e.printStackTrace()
             }
 
+            @SuppressLint("NotifyDataSetChanged")
             override fun onResponse(call: Call, response: Response) {
                 if (!response.isSuccessful) {
                     Log.e("HTTP Error", "Something didn't load, or wasn't successful")
                 } else {
-                    val categoryResponse = CategoryList(response.body!!.string())
+                    val categoryResponse = categoryList(response.body!!.string())
                     categories.addAll(categoryResponse)
                     runOnUiThread { categoryAdapter.notifyDataSetChanged() }
                 }
@@ -50,7 +50,7 @@ class CategoryActivity : BaseActivity() {
 
     }
 
-    fun CategoryList(jsonString: String): ArrayList<Category>{
+    fun categoryList(jsonString: String): ArrayList<Category>{
         val categories = arrayListOf<Category>()
         val jsCategories = JSONObject(jsonString)
         val jsArrayCategories = jsCategories.getJSONArray("items")

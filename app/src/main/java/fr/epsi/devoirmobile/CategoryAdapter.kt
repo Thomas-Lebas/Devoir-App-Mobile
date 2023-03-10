@@ -8,11 +8,11 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class CategoryAdapter (val categories: ArrayList<Category>): RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
+class CategoryAdapter (private val categories: ArrayList<Category>): RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
 
     class ViewHolder(view: View): RecyclerView.ViewHolder(view){
-        val categoryName = view.findViewById<TextView>(R.id.category_name)
-        val layoutCategory = view.findViewById<LinearLayout>(R.id.layoutCategory)
+        val categoryName: TextView = view.findViewById(R.id.category_name)
+        val layoutCategory: LinearLayout = view.findViewById(R.id.layoutCategory)
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
@@ -22,7 +22,7 @@ class CategoryAdapter (val categories: ArrayList<Category>): RecyclerView.Adapte
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val category = categories.get(position)
+        val category = categories[position]
         holder.categoryName.text = category.title
 
         holder.layoutCategory.setOnClickListener {

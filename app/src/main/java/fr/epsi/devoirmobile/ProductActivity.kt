@@ -1,6 +1,6 @@
 package fr.epsi.devoirmobile
 
-import androidx.appcompat.app.AppCompatActivity
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -32,14 +32,15 @@ class ProductActivity : BaseActivity() {
 
         httpClient.newCall(request).enqueue(object: Callback {
             override fun onFailure(call: Call, e: IOException) {
-                e.printStackTrace();
+                e.printStackTrace()
             }
 
+            @SuppressLint("NotifyDataSetChanged")
             override fun onResponse(call: Call, response: Response) {
                 if (!response.isSuccessful) {
                     Log.e("HTTP Error", "Something didn't load, or wasn't successful")
                 } else {
-                    val productResponse = ProductList(response.body!!.string())
+                    val productResponse = productList(response.body!!.string())
                     products.addAll(productResponse)
                     runOnUiThread { productAdapter.notifyDataSetChanged() }
                 }
@@ -50,7 +51,7 @@ class ProductActivity : BaseActivity() {
 
     }
 
-    fun ProductList(jsonString: String): ArrayList<Product>{
+    fun productList(jsonString: String): ArrayList<Product>{
         val products = arrayListOf<Product>()
         val jsProducts = JSONObject(jsonString)
         val jsArrayProducts = jsProducts.getJSONArray("items")
